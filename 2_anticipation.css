@@ -1,0 +1,24 @@
+.disappear {
+  animation-name: disappear_kf;
+
+  animation-delay: 2s;
+  /* animation-iteration-count: infinite; */
+  transition-timing-function: ease-out;
+  transform-origin: center;
+  animation-duration: 2s;
+  transition: transform 2s cubic-bezier(0.7, 0, 0.84, 0);
+}
+
+@keyframes disappear_kf {
+  0% {
+    transform: translateY(0vh);
+  }
+
+  50% {
+    transform: translateY(-15vh);
+  }
+
+  100% {
+    transform: translateY(100vh);
+  }
+}

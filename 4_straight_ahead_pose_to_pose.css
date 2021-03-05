@@ -1,0 +1,34 @@
+.squash {
+  animation-name: squash_kf;
+  animation-iteration-count: infinite;
+  transition-timing-function: linear;
+  animation-duration: 3s;
+  /* transition: cubic-bezier(0.7, 0, 0.84, 0); */
+}
+
+@keyframes squash_kf {
+  0% {
+    transform: translateX(0);
+  }
+  30% {
+    transform: translateX(15vw) translateY(var(--bottom));
+  }
+  45% {
+    transform: translateX(20vw) translateY(10vw);
+  }
+  60% {
+    transform: translateX(25vw) translateY(var(--bottom));
+  }
+  85% {
+    transform: translateX(32vw) translateY(20vw);
+  }
+  90% {
+    transform: translateX(35vw) translateY(var(--bottom));
+  }
+  95% {
+    transform: translateX(40vw) translateY(25vw);
+  }
+  100% {
+    transform: translateX(45vw) translateY(var(--bottom));
+  }
+}

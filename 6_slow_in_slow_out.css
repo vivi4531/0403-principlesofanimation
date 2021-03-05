@@ -1,0 +1,35 @@
+.show {
+  animation-name: show_kf;
+  animation-iteration-count: 1;
+  transition-timing-function: ease-in-out;
+  animation-duration: 3s;
+  transition: cubic-bezier(0.7, 0, 0.84, 0);
+}
+
+@keyframes show_kf {
+  0% {
+    transform: translateX(-100vw);
+  }
+
+  100% {
+    transform: translateX(0vw);
+  }
+}
+
+.hide {
+  animation-name: hide_kf;
+  animation-iteration-count: 1;
+  transition-timing-function: ease-in-out;
+  animation-duration: 10s;
+  transition: cubic-bezier(0.7, 0, 0.84, 0);
+}
+
+@keyframes hide_kf {
+  0% {
+    transform: translateX(0vw);
+  }
+
+  100% {
+    transform: translateX(-100vw);
+  }
+}
